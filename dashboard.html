@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--bootstrap-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	<!--css-->
+	<link rel="stylesheet" type="text/css" href="dashboard1.css">
+	<title></title>
+	<!--1st icon-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--india map-->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+<body>
+	<div id="mySidebar" class="sidebar">
+  		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  		<a href="#">Dashboard</a>
+  		<a href="#">Analysis</a>
+  		<a href="#">Clusters</a>
+  		<a href="#">Description</a>
+	</div>
+
+	<header style="cursor: pointer;">
+		<br>
+		<i class="fa fa-dedent" style="font-size:20px;color:#D1DBFF;margin-left: 40px;" onclick="openNav()"></i>
+		<span style="color:#D1DBFF;margin-left: 20px;font-size: 20px;word-spacing: 0.5px;">
+			COVID-19 INDIAN CASES DASHBOARD DESIGN AND DATA VISUALIZATION
+		</span>
+	</header>
+	<br>
+	<!--1st part-->
+	<div class="main">
+  		<div class="row">
+    		<div class="col c1">
+      			<span style="color:#D1DBFF;font-size: 20px;margin-left: 50px;">Total</span>
+				<span style="color:orange;font-size: 25px;margin-left: 30px; ">10,595,660</span>
+    		</div>
+    		<div class="col c1">
+      			<span style="color:#D1DBFF;font-size: 20px;margin-left: 50px;">Recovered</span>
+				<span style="color:#2C54D1;font-size: 25px;margin-left: 30px; ">10,245,741</span>
+    		</div>
+    		<div class="col c1">
+      			<span style="color:#D1DBFF;font-size: 20px;margin-left: 50px;">Deaths</span>
+				<span style="color:#FF4D85;font-size: 25px;margin-left: 30px; ">152,718</span>
+    		</div>
+    		<div class="col c1">
+      			<span style="color:#D1DBFF;font-size: 20px;margin-left: 50px;">Active</span>
+				<span style="color:#9D2EFF;font-size: 25px;margin-left: 30px; ">197,201</span>
+    		</div>
+    		<div class="col c1">
+      			<span style="color:#D1DBFF;font-size: 20px;margin-left: 50px;">New</span>
+				<span style="color:#DFCF00;font-size: 25px;margin-left: 50px; ">03,327</span>
+    		</div>
+    		<div class="col c1">
+      			<span style="color:#D1DBFF;font-size: 20px;margin-left: 50px;">Country</span>
+				<span style="color:#8388B1;font-size: 25px;margin-left: 50px;">India</span>
+    		</div>
+  		</div>
+	</div>
+	<!--2nd part-->
+	<hr style="background-color: #D1DBFF;width: 50%;">
+	<div class="container">
+  		<div class="row">
+    		<div class="col-md-6">
+    			<iframe src="https://vm.di91.com/" ref="nofollow" id="statewise" scrolling="no" frameBorder="0" width="100%" height="700">
+    			</iframe>
+    		</div>
+    		<div class="col-md-6">
+    			<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plotlydeath.geraabhishek.repl.co" height="425" width="100%">
+				</iframe>
+    		</div>
+  		</div>
+	</div>
+	<!--3rd part-->
+	<div class="container">
+  		<div class="row">
+    		<div class="col">
+    			<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://recoveryrate.geraabhishek.repl.co" height="425" width="100%">
+				</iframe>
+    		</div>
+    		<div class="col">
+    			<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://deathrate.geraabhishek.repl.co" height="425" width="100%">
+				</iframe>
+    		</div>
+  		</div>
+	</div>
+	<!--4th part-->
+	<div>
+		<iframe id="igraph1" scrolling="no" style="border:none;" seamless="seamless" src="https://stackbarhorizontal.geraabhishek.repl.co" height="800" width="800" >
+		</iframe>
+	</div>
+</body>
+<script type="text/javascript">
+	function openNav() {
+  		document.getElementById("mySidebar").style.width = "250px";
+  		document.getElementById("main").style.marginLeft = "250px";
+	}
+
+	function closeNav() {
+  		document.getElementById("mySidebar").style.width = "0";
+  		document.getElementById("center").style.marginLeft= "-150";
+	}
+</script>
+</html>
